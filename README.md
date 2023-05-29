@@ -429,7 +429,7 @@ return NewClient(conn, opt)
 
 第一处是在建立连接时采用了封装的 Dial 方法。
 ```go
-client, _ := gamblerRPC.Dial("tcp", <-addr)
+conn, _ := net.Dial("tcp", <-addr)
 ↓ ↓ ↓ ↓ ↓
 client, _ := gamblerRPC.Dial("tcp", <-addr)
 ```
