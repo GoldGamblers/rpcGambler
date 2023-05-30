@@ -157,6 +157,9 @@ func main() {
 	call(registryAddr)
 	broadcast(registryAddr)
 
+	// 反射包的使用样例
+	//gamblerRPC.ReflectUseExample()
+
 	//ch := make(chan string)
 	//<-ch
 }
