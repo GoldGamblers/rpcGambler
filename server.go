@@ -172,7 +172,7 @@ func (server *Server) serveCodec(cc codec.Codec, opt *Option) {
 	_ = cc.Close()
 }
 
-// 请求的body， 存储一个调用的全部因袭
+// 请求的body， 存储一个调用的全部信息
 type request struct {
 	h            *codec.Header // 请求的 Header 部分，包括服务名、方法名等
 	argv, replyv reflect.Value // 请求的 参数 and 回复值，是 body 部分
